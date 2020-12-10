@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('user_client');
+    return view('welcome');
 });
 
 Route::get('/lab', function () {
