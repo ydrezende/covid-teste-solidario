@@ -19,31 +19,36 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="name">Seu nome</label>
-                            <input type="text" name="name" class="form-control" id="name" data-rule="minlen:3" data-msg="Por favor, insira seu nome" />
+                            <input required type="text" name="name" class="form-control" id="name" data-rule="minlen:3" data-msg="Por favor, insira seu nome" />
                             <div class="validate"></div>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="email">Seu email</label>
-                            <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Por favor, informe um email" />
+                            <input required type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Por favor, informe um email" />
                             <div class="validate"></div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="cpf">CPF</label>
-                            <input type="text" name="cpf" class="form-control" id="cpf" data-rule="minlen:11" data-msg="Por favor, informe seu CPF" />
+                            <input required type="text" name="cpf" class="form-control" id="cpf" data-rule="minlen:11" data-msg="Por favor, informe seu CPF" />
                             <div class="validate"></div>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label for="phone">Telefone</label>
-                            <input type="text" class="form-control" name="phone" id="phone" data-rule="minlen:8" data-msg="Por favor, precisamos do seu telefone" />
+                            <input required type="text" class="form-control" name="phone" id="phone" data-rule="minlen:8" data-msg="Por favor, precisamos do seu telefone" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="birthday">Data de nascimento</label>
+                            <input required type="date" class="form-control" name="birthday" id="birthday" data-msg="Por favor, precisamos do seu telefone" />
                             <div class="validate"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group">
                             <label for="address">Endereço</label>
-                            <input type="text" name="address" class="form-control" id="address" data-rule="minlen:11" data-msg="Por favor, informe seu endereço" />
+                            <input required type="text" name="address" class="form-control" id="address" data-rule="minlen:11" data-msg="Por favor, informe seu endereço" />
                             <div class="validate"></div>
                         </div>
                     </div>
@@ -56,7 +61,7 @@
                         <input disabled type="file" class="form-control-file" id="comprovante">
                     </div>
                     <div class="form-check">
-                    <input required class="form-check-input" type="checkbox" value="" id="permissao">
+                        <input required class="form-check-input" type="checkbox" value="" id="permissao">
                         <label class="form-check-label" for="permissao">
                             Permito o uso dos meus dados anônimos para geração de estatísticas.
                         </label>

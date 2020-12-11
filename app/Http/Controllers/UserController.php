@@ -49,6 +49,7 @@ class UserController extends Controller
         $newUser->phone = $request->phone;
         $newUser->cpf = $request->cpf;
         $newUser->address = $request->address;
+        $newUser->birthday = $request->birthday;
 
         $newUser->save();
 

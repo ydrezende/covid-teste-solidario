@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class User extends Model
 {
@@ -16,9 +17,15 @@ class User extends Model
         'email',
         'phone',
         'cpf',
-        'address'
+        'address',
+        'birthday'
     ];
 
     public $timestamps = false;
+
+    public function getBirthdayAttribute($value)
+    {
+        return Carbon::create($value)->format('d/m/Y');
+    }
 
 }
