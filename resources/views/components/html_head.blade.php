@@ -21,6 +21,8 @@
         <link href="{{ URL::asset('vendor/venobox/venobox.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('vendor/aos/aos.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('vendor/leaflet/leaflet.css') }}" rel="stylesheet">
+        <link href="{{ URL::asset('vendor/leaflet/mapbox-gl.css') }}" rel="stylesheet">
 
         <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
         
@@ -34,7 +36,11 @@
         <script src="{{ URL::asset('vendor/venobox/venobox.min.js') }}" defer></script>
         <script src="{{ URL::asset('vendor/owl.carousel/owl.carousel.min.js') }}" defer></script>
         <script src="{{ URL::asset('vendor/aos/aos.js') }}" defer></script>
+        <script src="{{ URL::asset('vendor/leaflet/leaflet.js') }}" defer></script>
+        <script src="{{ URL::asset('vendor/leaflet/mapbox-gl.js') }}" defer></script>
+        <script src="{{ URL::asset('vendor/leaflet/leaflet-mapbox-gl.js') }}" defer></script>
 
         <!-- Template Main JS File -->
         <script src="{{ URL::asset('js/main.js') }}" defer></script>
     </head>
+    <body>

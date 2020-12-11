@@ -201,3 +201,16 @@
   });
 
 })(jQuery);
+
+var map = L.map('mapa-parceiros');
+map.options.minZoom = 4;
+var gl = L.mapboxGL({
+  accessToken: 'pk.eyJ1IjoieWRyZXplbmRlIiwiYSI6ImNraWpkNzZwbjAwbzczMHBhMDVubDJ6MmoifQ.HIouLFTODeGAS6UkbL02Dg',
+  style: '/vendor/leaflet/style.json'
+}).addTo(map);
+map.fitWorld();
+
+map.setView({lat: -14.944784875088372, lng: -48.31835937500001});
+
+var farmacia = L.marker([-27.605315, -48.465657]).addTo(map);
+var laboratorio = L.marker([-27.5974927,-48.5169697]).addTo(map);
